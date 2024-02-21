@@ -16,3 +16,5 @@ spring:
         git:
           uri: https://github.com/akasozi/config-repo.git
           default-label: main
+          clone-on-start: true
+          force-pull: true
