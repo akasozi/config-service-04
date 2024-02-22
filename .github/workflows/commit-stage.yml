@@ -39,7 +39,7 @@ jobs:
         with:
           sarif_file: ${{ steps.scan.outputs.sarif }}
 
-      - name: alidate Kubernetes manifests
+      - name: Validate Kubernetes manifests
         uses: stefanprodan/kube-tools@v1
         with:
           kubectl: 1.28.3
